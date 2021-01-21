@@ -1,0 +1,6 @@
+PseudoHap is a program to pseudohaplodize fasta files.
+
+You need to know the number of sequence pairs in the fasta file in order to run PseudoHap.
+
+PseudoHap was written by LyAndra Lujan on January 1st, 21.
+It was written to check if programs worked better on haplotyped data before taking the time to actually haplotype the data.
