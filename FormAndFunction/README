@@ -1,0 +1,20 @@
+This program reformats VCF files into LyAndra Lujan's preferred format for working with them.
+This format is also needed to work with other programs in PJLW that use data from a vcf.
+
+SNP data is simplified to alleles only, and then samples are reordered into population groups.
+A SamplesPop.txt file is necessary to reorder samples.
+SamplesPop.txt should have samples and populations in the preferred order.
+
+SamplesPop.txt file should not include headers, have samples in rows, and be formatted as:
+
+OutOrder(starting with 0) '\t' Population name '\t' SampleID '\t' Original order 'endl'
+
+Program Tasks:	only use first three characters of each samples SNP info.
+					      reorder samples, and assign population names and numbers
+
+Originally written by LyAndra Lujan in fall of 2018 for ALDH2-2 project working with the 1KGP dataset.
+Updated so now reordering by population is optional.
+Updated by LyAndra on 10/30/20 during work in the Singh lab on the HORMA
+domain proteins project, it's first use was for C. elegans population genetics.
+
+lyandralujan.com 
