@@ -1,6 +1,6 @@
 # PGLW.-
-Pop Gen the Long Way (PGLW) is comprised of programs I wrote because my undergrad research adviser, Dr. Long, had me learn C++ instead of relying on other people's programs.
-
+Pop Gen the Long Way (PGLW) is comprised of programs I wrote because my undergrad research adviser, Dr. Long, had me learn and use C++.
+This collection is a work in progress.  
 
 ### Programs:
 * *FormAndFunction*: a program that reformats vcf files into simplified `.txt` files. Also reorders samples into their populations.
