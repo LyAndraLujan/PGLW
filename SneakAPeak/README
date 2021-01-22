@@ -4,8 +4,7 @@ of VCF files and puts them into a text file for viewing.
 How useful will other people find this? I don't know.
 I use it to get just the sample IDs, see if the SNP data is phased or not, and check what the CHROM, POS, ID fields look like.
 
-If you don't know how many meta lines are in the `.vcf`, I suggest the R package `vcfR`.
-https://cran.r-project.org/web/packages/vcfR/index.html
+If you don't know how many meta lines are in the `.vcf`, I suggest the R package [vcfR](https://cran.r-project.org/web/packages/vcfR/index.html)
 Even if the file is to big for R to hold, it will still tell you the number of meta lines, SNPs, and column count.
 I would like to make a version of this that will tell you all of that information, but I probably won't.
 
