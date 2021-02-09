@@ -93,6 +93,8 @@ if (N==1)
     }
   }
   cout<<" \n The out file will be FakeHap.fasta. "<<endl;
+  fin.close();
+  fout.close();
 }
 
 if (N>1)
@@ -163,7 +165,9 @@ if (N>1)
       Allele1.clear();
       Allele2.clear();
     }
+    fin0.close();
   }
+fin.close();
 cout<<" Complete! ";
 }
 
