@@ -9,8 +9,10 @@ using namespace std;
 
 int P=1;
 int D=1;
+int N=0;
 string W;
 string Seq;
+string InFile;
 string Outfile;
 string Check;
 string Allele1;
@@ -18,10 +20,19 @@ string Allele2;
 
 int main(int argc, char** argv)
 {
-  ifstream fin0("test.config");
+  cout<<" This program takes a fasta file with unhaplotyped sequences and randomly assigns haplotypes.  "<<endl;
+  cout<<" This version can only run .fasta files with one pair. "<<endl;
+
+  cout<<" How many .fasta files are you running? ";
+  cin>>N;
+
+  cout<<" Configuration file should be formatted as:sequence.fasta[tab]outfile[tab]\n";
+  cout<<" Configuration file: ";
+    cin>> InFile;
+  ifstream fin0(InFile);
     if (!fin0) cout<<"  config file not in directory. "<<endl;
 
-  for (int i=0;i<3;i++)
+  for (int i=0;i<N;i++)
   {
     fin0>>Seq;
     ifstream fin(Seq);
